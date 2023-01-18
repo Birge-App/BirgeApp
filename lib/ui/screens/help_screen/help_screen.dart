@@ -44,9 +44,9 @@ class HelpScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Container(
-                    width: width / 2,
-                    child: Image.asset(imageHello),
+                  Image.asset(
+                    imageHello,
+                    scale: 6,
                   ),
                 ],
               ),
