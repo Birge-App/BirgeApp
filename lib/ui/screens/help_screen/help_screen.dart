@@ -31,32 +31,43 @@ class HelpScreen extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(HelpScreenStrings.hello, style: CommonTextStyle.mainHeader, textAlign: TextAlign.left),
+                      spacerHeight(10),
+                      Text(HelpScreenStrings.hello,
+                          style: CommonTextStyle.mainHeader,
+                          textAlign: TextAlign.left),
                       spacerHeight(20),
                       SizedBox(
                         width: width / 2,
                         child: Text(HelpScreenStrings.helloText,
-                            style: CommonTextStyle.mainText, textAlign: TextAlign.left),
+                            style: CommonTextStyle.mainText,
+                            textAlign: TextAlign.left),
                       ),
                     ],
                   ),
-                  Image.asset(imageHello),
+                  Container(
+                    width: width / 2,
+                    child: Image.asset(imageHello),
+                  ),
                 ],
               ),
-              spacerHeight(5.h),
+              spacerHeight(4.h),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: EdgeInsets.only(left: (Device.width - width) / 4),
-                    child:
-                        Text(HelpScreenStrings.therapist, style: CommonTextStyle.mainHeader, textAlign: TextAlign.left),
+                    child: Text(HelpScreenStrings.therapist,
+                        style: CommonTextStyle.mainHeader,
+                        textAlign: TextAlign.left),
                   ),
                   spacerHeight(2.h),
                   Padding(
-                    padding: EdgeInsets.only(left: (Device.width - width) / 4, right: (Device.width - width) / 4),
+                    padding: EdgeInsets.only(
+                        left: (Device.width - width) / 4,
+                        right: (Device.width - width) / 4),
                     child: Text(HelpScreenStrings.therapistAbout,
-                        style: CommonTextStyle.mainText, textAlign: TextAlign.left),
+                        style: CommonTextStyle.mainText,
+                        textAlign: TextAlign.left),
                   ),
                 ],
               ),
